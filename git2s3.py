@@ -42,9 +42,9 @@ def iterate_files(basedir):
         for fn in files:
             if fn.startswith('.'):  # file name not
                 continue
-            abspath = os.path.join(path, fn)
             if path.find(".git") != -1:  # ignore file path has .git
                 continue
+            abspath = os.path.join(path, fn)
             yield abspath, os.path.relpath(abspath, basedir)
 
 
