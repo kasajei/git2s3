@@ -1,4 +1,3 @@
-from distutils import debug
 import os
 
 from git import *
